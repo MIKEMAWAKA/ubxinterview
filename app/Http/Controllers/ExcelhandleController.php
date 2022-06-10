@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\ExcelData;
 use App\Imports\ExcelsImport;
 
+use Response;
+
 use Maatwebsite\Excel\Facades\Excel;
 
 
@@ -28,6 +30,19 @@ class ExcelhandleController extends Controller
         return view('datatable', ['data'=>$data]);
 
     }
+
+    
+    public function apiservice(){
+
+        $data = ExcelData::all();
+
+        return  Response::json($data, 200);
+
+
+        // return view('datatable', ['data'=>$data]);
+
+    }
+
 
     
 }

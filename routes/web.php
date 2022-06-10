@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::post('importExcel', [App\Http\Controllers\ExcelhandleController::class, 'importExcel'])->name('importExcel');
 //Route::get('/excelupload', [App\Http\Controllers\ExcelhandleController::class, 'importExcel']);
 Route::get('/data', [App\Http\Controllers\ExcelhandleController::class, 'getdata']);
+
+Route::get('/apidata', [App\Http\Controllers\ExcelhandleController::class, 'apiservice']);
