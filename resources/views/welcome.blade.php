@@ -44,7 +44,7 @@
                      
                     </div>
     
-                    <a href="/data" name="submit"  type="submit"  style="background-color: green;flex justify-center ;margin-top:60px;align-self:center;">VIEW</button>
+                    <a href="/data" name="submit"  type="submit"  style="background-color: green;padding:9px;flex justify-center ;margin-top:60px;align-self:center;">VIEW DATA</button>
                     
     
                 </form>
