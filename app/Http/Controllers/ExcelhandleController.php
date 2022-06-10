@@ -17,6 +17,9 @@ class ExcelhandleController extends Controller
     //
     
     public function importExcel(Request $request)  {
+        $request->validate([
+            'filexcele'=> 'required|mimes:xlsx, xls'
+         ]);
 
         Excel::import(new ExcelsImport, $request->filexcele);
         return redirect()->back()->with('success', 'User Imported Successfully');
